@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ SEO META ═══ -->
+  <title>Schoonmaakbedrijf Schoon & Snel | Schoonmaak, Onderhoud, Kantoor</title>
+  <meta name="description" content="Schoon & Snel – uw betrouwbare schoonmaakbedrijf voor huizen en kantoren. Professioneel, betrouwbaar, eerlijke prijzen. Gratis offerte, snel ter plaatse." />
+  <meta name="keywords" content="schoonmaak, schoonmaakbedrijf, kantoorschoonmaak, huisschoonmaak, onderhoudsschoonmaak, professioneel schoonmaken" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Schoon & Snel Diensten" />
+  <meta name="geo.placename" content="Nederland" />
+  <link rel="canonical" href="https://schoonmaak.sitesnel24.nl/" />
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://schoonmaak.sitesnel24.nl/" />
+  <meta property="og:title" content="Schoon & Snel | Schoonmaakbedrijf" />
+  <meta property="og:description" content="Professioneel schoonmaakbedrijf voor huizen en kantoren. Betrouwbaar, vakkundig, eerlijke prijzen. Gratis offerte." />
+  <meta property="og:locale" content="nl_NL" />
+
+  <!-- ═══ SCHEMA.ORG ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://schoonmaak.sitesnel24.nl",
+    "name": "Schoon & Snel Diensten",
+    "description": "Professioneel schoonmaakbedrijf gespecialiseerd in huisschoonmaak, kantoorschoonmaak en onderhoudsschoonmaak.",
+    "url": "https://schoonmaak.sitesnel24.nl",
+    "telephone": "+31612345678",
+    "email": "info@schoonensnel.nl",
+    "areaServed": "Nederland",
+    "image": "https://schoonmaak.sitesnel24.nl/logo.jpg",
+    "priceRange": "€€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "56"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Hoe vraag ik schoonmaak aan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stuur ons een WhatsApp-bericht of bel direct. We maken snel een offerte. Geen verplichtingen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoeveel kost huisschoonmaak?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De prijs hangt af van de grootte van het huis. We geven altijd een gratis offerte. Huisschoonmaak start vanaf €80-150."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen jullie regelmatig schoonmaken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja! We bieden wekelijks, tweewekelijks of maandelijks schoonmaakabonnementen aan. Vaste dagen en vaste prijs."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #10b981;
+      --primary-light: #f0fdf4;
+      --accent: #06b6d4;
+      --dark: #1a1a2e;
+      --light: #f9f8f5;
+      --text-secondary: #666;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(249,248,245,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(16,185,129,0.1);
+      padding: 0 2rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .nav-cta {
+      background: var(--primary);
+      color: white;
+      padding: 0.6rem 1.4rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: #059669; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-light) 0%, #dcfce7 100%);
+      padding: 100px 2rem 80px;
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 1rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #059669;
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      background: white;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+    .btn-secondary:hover {
+      background: var(--primary-light);
+    }
+
+    /* SECTION */
+    section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      margin-bottom: 3rem;
+      max-width: 600px;
+    }
+
+    /* DIENSTEN GRID */
+    .diensten-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2rem;
+      border: 1px solid rgba(16,185,129,0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(16,185,129,0.1);
+    }
+    .service-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .service-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    .service-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* REVIEWS */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .review {
+      background: white;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      border-left: 4px solid var(--primary);
+    }
+    .stars {
+      color: #ffc107;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .review-text {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+      font-style: italic;
+    }
+    .review-author {
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    /* PRICING */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .price-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2rem;
+      border: 1px solid rgba(16,185,129,0.15);
+      text-align: center;
+    }
+    .price-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .price {
+      font-size: 2rem;
+      color: var(--accent);
+      font-weight: 800;
+      margin: 1rem 0;
+    }
+    .price-card ul {
+      list-style: none;
+      margin: 1.5rem 0;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    .price-card li {
+      padding: 0.4rem 0;
+      color: var(--text-secondary);
+    }
+    .price-card li::before {
+      content: "✓ ";
+      color: var(--primary);
+      font-weight: 700;
+      margin-right: 0.5rem;
+    }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      border-radius: 20px;
+      margin: 4rem auto;
+      max-width: 600px;
+    }
+    .cta h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .cta p {
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 2rem;
+    }
+    .cta .btn {
+      background: white;
+      color: var(--primary);
+    }
+    .cta .btn:hover {
+      background: var(--primary-light);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.7);
+      padding: 3rem 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 1rem; }
+      section { padding: 3rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Hoofdmenu">
+  <a href="#" class="logo" aria-label="Schoon & Snel homepage">🧹 Schoon & Snel</a>
+  <a href="#contact" class="nav-cta" aria-label="Offerte aanvragen schoonmaak">Offerte</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" role="region" aria-label="Schoon & Snel welkomstbericht">
+  <h1>Schoon & Snel Diensten</h1>
+  <p class="hero-sub">Professionele schoonmaak voor huizen en kantoren. Betrouwbaar, vakkundig, eerlijke prijzen.</p>
+  <div class="hero-buttons">
+    <a href="tel:+31612345678" class="btn btn-primary" aria-label="Bel Schoon & Snel direct">📞 Bel direct</a>
+    <a href="https://wa.me/31612345678?text=Hallo%2C%20ik%20wil%20graag%20schoonmaak%20aanvragen" class="btn btn-secondary" aria-label="WhatsApp Schoon & Snel voor schoonmaak">💬 WhatsApp</a>
+  </div>
+</section>
+
+<!-- DIENSTEN -->
+<section id="diensten" aria-labelledby="diensten-heading">
+  <h2 id="diensten-heading">Onze schoonmaakdiensten</h2>
+  <p class="section-sub">Van incidentele schoonmaak tot vast wekelijks onderhoud. Wij regelen het!</p>
+  <div class="diensten-grid">
+    <article class="service-card">
+      <div class="service-icon" aria-hidden="true">🏠</div>
+      <h3>Huisschoonmaak</h3>
+      <p>Grondige schoonmaak van uw huis. Van woonkamer tot slaapkamer — alles wordt schoon en fris.</p>
+    </article>
+    <article class="service-card">
+      <div class="service-icon" aria-hidden="true">🏢</div>
+      <h3>Kantoorschoonmaak</h3>
+      <p>Dagelijks of wekelijks onderhoud van kantoor, winkel of bedrijfsruimte. Professioneel en discreet.</p>
+    </article>
+    <article class="service-card">
+      <div class="service-icon" aria-hidden="true">✨</div>
+      <h3>Onderhoudsschoonmaak</h3>
+      <p>Regelmatige schoonmaak (wekelijks/maandelijks). Vaste dag, vaste prijs, betrouwbaar.</p>
+    </article>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section aria-labelledby="reviews-heading">
+  <h2 id="reviews-heading">Wat klanten zeggen</h2>
+  <p class="section-sub">4,9 sterren — 56 tevreden klanten op Google</p>
+  <div class="reviews-grid">
+    <article class="review" itemscope itemtype="https://schema.org/Review">
+      <div class="stars" aria-label="5 sterren beoordeling">★★★★★</div>
+      <p class="review-text" itemprop="reviewBody">"Super betrouwbaar en alles wordt echt schoon! Ik ben erg blij met hun service."</p>
+      <p class="review-author" itemprop="author">Mieke P.</p>
+    </article>
+    <article class="review" itemscope itemtype="https://schema.org/Review">
+      <div class="stars" aria-label="5 sterren beoordeling">★★★★★</div>
+      <p class="review-text" itemprop="reviewBody">"Professioneel, betrouwbaar en eerlijke prijs. Ik kan ze echt aanbevelen!"</p>
+      <p class="review-author" itemprop="author">Joost V.</p>
+    </article>
+    <article class="review" itemscope itemtype="https://schema.org/Review">
+      <div class="stars" aria-label="5 sterren beoordeling">★★★★★</div>
+      <p class="review-text" itemprop="reviewBody">"Elke week schoon huis. Fantastisch werk en heel erg betrouwbaar. Echt top!"</p>
+      <p class="review-author" itemprop="author">Anna L.</p>
+    </article>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section aria-labelledby="pricing-heading">
+  <h2 id="pricing-heading">Onze prijzen</h2>
+  <p class="section-sub">Transparante prijzen, altijd een gratis offerte. Geen verrassingen achteraf.</p>
+  <div class="pricing-grid">
+    <div class="price-card" itemscope itemtype="https://schema.org/Offer">
+      <h3 itemprop="name">Huisschoonmaak (1x)</h3>
+      <div class="price" itemprop="price" content="0">€80-150</div>
+      <ul>
+        <li>Alle ruimten</li>
+        <li>Grondige schoonmaak</li>
+        <li>Flexibel schoon</li>
+      </ul>
+    </div>
+    <div class="price-card" itemscope itemtype="https://schema.org/Offer">
+      <h3 itemprop="name">Wekelijks onderhoud</h3>
+      <div class="price" itemprop="price" content="0">€70/week</div>
+      <ul>
+        <li>Vaste dag & tijd</li>
+        <li>Altijd schoon huis</li>
+        <li>Gunstiger dan 1x</li>
+      </ul>
+    </div>
+    <div class="price-card" itemscope itemtype="https://schema.org/Offer">
+      <h3 itemprop="name">Kantoorschoonmaak</h3>
+      <div class="price" itemprop="price" content="0">Op aanvraag</div>
+      <ul>
+        <li>Dagelijks/wekelijks</li>
+        <li>Zakelijk en discreet</li>
+        <li>Gratis offerte</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta" role="complementary" aria-label="Call to action voor offerte">
+  <h2>Gratis offerte aanvragen?</h2>
+  <p>Stuur ons een bericht. We maken snel een offerte — geen verplichtingen!</p>
+  <a href="https://wa.me/31612345678?text=Hallo%2C%20ik%20wil%20graag%20schoonmaak%20aanvragen" class="btn btn-primary" aria-label="WhatsApp Schoon & Snel voor schoonmaakofferte">💬 WhatsApp offerte</a>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Contact & informatie</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:600px;">
+    <div>
+      <strong>Telefoon</strong><br/>
+      <a href="tel:+31612345678">06-12 34 56 78</a><br/><br/>
+      <strong>WhatsApp</strong><br/>
+      <a href="https://wa.me/31612345678">06-12 34 56 78</a>
+    </div>
+    <div>
+      <strong>Werkzaam in:</strong><br/>
+      Hele Nederland<br/>
+      Snel ter plaatse
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <p style="margin-bottom:1rem;">© 2025 Schoon & Snel Diensten · Nederland · Alle rechten voorbehouden</p>
+  <p>Website gemaakt door <a href="https://sitesnel24.nl" title="Website laten maken voor zzp en mkb - SiteSnel24">SiteSnel24.nl</a> — professionele websites voor zzp'ers en mkb</p>
+</footer>
+
+</body>
+</html>
