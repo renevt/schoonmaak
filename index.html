@@ -4,299 +4,112 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Schoonmaakbedrijf Demo | Professionele schoonmaak via WhatsApp</title>
-<meta name="description" content="Professionele schoonmaak voor kantoren, trappenhuizen, glasbewassing, vloeren en bedrijfspanden. Vraag direct een offerte aan via WhatsApp.">
+<title>Schoonmaakbedrijf | Direct offerte via WhatsApp</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial;background:#f5f7fa;color:#1f2937}
+.container{width:92%;max-width:1150px;margin:auto}
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+color:#fff;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f7f9fb;
-  color: #1f2937;
-  line-height: 1.6;
+.hero h1{font-size:52px;margin-bottom:20px}
+.hero p{font-size:20px;margin-bottom:30px}
+
+.btn{
+display:inline-block;
+padding:15px 22px;
+border-radius:10px;
+font-weight:bold;
 }
 
-a {
-  text-decoration: none;
+.green{background:#25D366;color:#062f19}
+.white{background:#fff;color:#111}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:40px;
 }
 
-.container {
-  width: 92%;
-  max-width: 1180px;
-  margin: auto;
+.card{
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
-.hero {
-  min-height: 92vh;
-  background:
-    linear-gradient(rgba(8, 33, 46, 0.72), rgba(8, 33, 46, 0.72)),
-    url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  display: flex;
-  align-items: center;
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
 }
 
-.hero-content {
-  max-width: 720px;
+.card-content{
+padding:20px;
 }
 
-.badge {
-  display: inline-block;
-  background: #25d366;
-  color: #06351c;
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.card h3{
+font-size:22px;
+margin-bottom:10px;
 }
 
-.hero h1 {
-  font-size: clamp(38px, 6vw, 70px);
-  line-height: 1.05;
-  margin-bottom: 22px;
+.card p{
+color:#555;
+margin-bottom:12px;
 }
 
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  color: #eaf7f1;
+.card a{
+color:#0a8f47;
+font-weight:bold;
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+section{padding:70px 0;text-align:center}
+
+.cta{
+background:#0f172a;
+color:#fff;
+padding:80px 0;
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 15px 22px;
-  border-radius: 12px;
-  font-weight: bold;
-  transition: 0.2s;
+footer{
+background:#111;
+color:#aaa;
+padding:20px;
+text-align:center;
 }
 
-.btn-green {
-  background: #25d366;
-  color: #062f19;
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
-.btn-white {
-  background: white;
-  color: #10212b;
+.whatsapp img{
+width:34px;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-section {
-  padding: 80px 0;
-}
-
-.section-title {
-  text-align: center;
-  max-width: 760px;
-  margin: 0 auto 45px;
-}
-
-.section-title h2 {
-  font-size: clamp(30px, 4vw, 46px);
-  margin-bottom: 14px;
-  color: #10212b;
-}
-
-.section-title p {
-  font-size: 18px;
-  color: #5b6470;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
-}
-
-.card {
-  background: white;
-  border-radius: 22px;
-  overflow: hidden;
-  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
-}
-
-.card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-}
-
-.card-content {
-  padding: 24px;
-}
-
-.card-content h3 {
-  font-size: 23px;
-  margin-bottom: 10px;
-  color: #10212b;
-}
-
-.card-content p {
-  color: #5b6470;
-  margin-bottom: 18px;
-}
-
-.card-content a {
-  color: #0f8f47;
-  font-weight: bold;
-}
-
-.why {
-  background: #10212b;
-  color: white;
-}
-
-.why .section-title h2,
-.why h3 {
-  color: white;
-}
-
-.why .section-title p,
-.why p {
-  color: #cbd5e1;
-}
-
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-}
-
-.why-box {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.12);
-  padding: 26px;
-  border-radius: 20px;
-}
-
-.why-box span {
-  font-size: 34px;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
-}
-
-.step {
-  background: white;
-  padding: 30px;
-  border-radius: 22px;
-  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
-}
-
-.step-number {
-  width: 48px;
-  height: 48px;
-  background: #25d366;
-  color: #06351c;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  margin-bottom: 18px;
-}
-
-.cta {
-  background:
-    linear-gradient(rgba(16, 33, 43, 0.86), rgba(16, 33, 43, 0.86)),
-    url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-}
-
-.cta h2 {
-  font-size: clamp(32px, 5vw, 54px);
-  margin-bottom: 18px;
-}
-
-.cta p {
-  font-size: 19px;
-  margin-bottom: 28px;
-  color: #e5e7eb;
-}
-
-footer {
-  background: #07151c;
-  color: #cbd5e1;
-  padding: 30px 0;
-  text-align: center;
-}
-
-.whatsapp-float {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 64px;
-  height: 64px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.28);
-  z-index: 999;
-}
-
-.whatsapp-float svg {
-  width: 36px;
-  height: 36px;
-}
-
-.whatsapp-label {
-  position: fixed;
-  right: 92px;
-  bottom: 30px;
-  background: white;
-  color: #10212b;
-  padding: 10px 14px;
-  border-radius: 999px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.16);
-  font-size: 14px;
-  font-weight: bold;
-  z-index: 998;
-}
-
-@media (max-width: 900px) {
-  .grid,
-  .why-grid,
-  .steps {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    min-height: 86vh;
-  }
-
-  .whatsapp-label {
-    display: none;
-  }
+@media(max-width:900px){
+.grid{grid-template-columns:1fr}
+.hero h1{font-size:34px}
 }
 </style>
 </head>
@@ -304,188 +117,97 @@ footer {
 <body>
 
 <header class="hero">
-  <div class="container hero-content">
-    <span class="badge">Snel offerte via WhatsApp</span>
-    <h1>Professionele schoonmaak voor bedrijven</h1>
-    <p>
-      Van kantoren en trappenhuizen tot glasbewassing en vloeronderhoud.
-      Betrouwbaar, netjes en eenvoudig bereikbaar via WhatsApp.
-    </p>
+<div class="container">
+<h1>Professionele schoonmaak zonder gedoe</h1>
+<p>Voor kantoren, trappenhuizen en bedrijfspanden. Vraag direct een offerte aan via WhatsApp.</p>
 
-    <div class="buttons">
-      <a class="btn btn-green" href="https://wa.me/31612345678?text=Hallo,%20ik%20wil%20graag%20een%20offerte%20voor%20schoonmaakwerk." target="_blank">
-        Offerte aanvragen via WhatsApp
-      </a>
-      <a class="btn btn-white" href="#diensten">
-        Bekijk diensten
-      </a>
-    </div>
-  </div>
+<a class="btn green" href="https://wa.me/31612345678?text=Ik%20wil%20een%20offerte">Offerte via WhatsApp</a>
+<a class="btn white" href="#diensten">Bekijk diensten</a>
+</div>
 </header>
 
 <section id="diensten">
-  <div class="container">
-    <div class="section-title">
-      <h2>Onze schoonmaakdiensten</h2>
-      <p>
-        Voor iedere ruimte een passende aanpak. Duidelijk, professioneel en zonder gedoe.
-      </p>
-    </div>
+<h2>Onze diensten</h2>
 
-    <div class="grid">
+<div class="container">
+<div class="grid">
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Kantoorschoonmaak">
-        <div class="card-content">
-          <h3>Kantoorschoonmaak</h3>
-          <p>Een frisse en representatieve werkplek voor medewerkers en bezoekers.</p>
-          <a href="https://wa.me/31612345678?text=Hallo,%20ik%20wil%20graag%20informatie%20over%20kantoorschoonmaak." target="_blank">Vraag offerte aan</a>
-        </div>
-      </div>
+<!-- Kantoor -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Kantoorschoonmaak</h3>
+<p>Schone werkplek voor personeel en klanten.</p>
+<a href="https://wa.me/31612345678?text=Offerte%20kantoor">Vraag offerte aan</a>
+</div>
+</div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Trappenhuizen schoonmaak">
-        <div class="card-content">
-          <h3>Trappenhuizen & VvE</h3>
-          <p>Schone entrees, gangen en trappenhuizen voor appartementencomplexen.</p>
-          <a href="https://wa.me/31612345678?text=Hallo,%20ik%20wil%20graag%20een%20offerte%20voor%20trappenhuis%20schoonmaak." target="_blank">Vraag offerte aan</a>
-        </div>
-      </div>
+<!-- Trappenhuis -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Trappenhuizen & VvE</h3>
+<p>Onderhoud van flats en appartementencomplexen.</p>
+<a href="https://wa.me/31612345678?text=Offerte%20trappenhuis">Vraag offerte aan</a>
+</div>
+</div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80" alt="Glasbewassing">
-        <div class="card-content">
-          <h3>Glasbewassing</h3>
-          <p>Schone ramen voor winkels, kantoren en bedrijfspanden.</p>
-          <a href="https://wa.me/31612345678?text=Hallo,%20ik%20wil%20graag%20een%20offerte%20voor%20glasbewassing." target="_blank">Vraag offerte aan</a>
-        </div>
-      </div>
+<!-- Glas -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601612628452-9e99ced43524?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Glasbewassing</h3>
+<p>Professionele reiniging van ramen en gevels.</p>
+<a href="https://wa.me/31612345678?text=Offerte%20glas">Vraag offerte aan</a>
+</div>
+</div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=900&q=80" alt="Kinderdagverblijf schoonmaak">
-        <div class="card-content">
-          <h3>Kinderdagverblijven</h3>
-          <p>Hygiënische schoonmaak voor ruimtes waar kinderen spelen, eten en slapen.</p>
-          <a href="https://wa.me/31612345678?text=Hallo,%20ik%20wil%20graag%20informatie%20over%20schoonmaak%20voor%20een%20kinderdagverblijf." target="_blank">Vraag offerte aan</a>
-        </div>
-      </div>
+<!-- Kinderopvang -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Kinderdagverblijven</h3>
+<p>Hygiënische schoonmaak voor kinderen.</p>
+<a href="https://wa.me/31612345678?text=Offerte%20kinderopvang">Vraag offerte aan</a>
+</div>
+</div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=900&q=80" alt="Vloeronderhoud">
-        <div class="card-content">
-          <h3>Vloeronderhoud</h3>
-          <p>Onderhoud voor vloeren in kantoren, winkels en algemene ruimtes.</p>
-          <a href="https://wa.me/31612345678?text=Hallo,%20ik%20wil%20graag%20een%20offerte%20voor%20vloeronderhoud." target="_blank">Vraag offerte aan</a>
-        </div>
-      </div>
+<!-- Vloer -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Vloeronderhoud</h3>
+<p>Machinaal reinigen en onderhouden van vloeren.</p>
+<a href="https://wa.me/31612345678?text=Offerte%20vloer">Vraag offerte aan</a>
+</div>
+</div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Bedrijfspanden schoonmaak">
-        <div class="card-content">
-          <h3>Bedrijfspanden</h3>
-          <p>Complete schoonmaak voor bedrijfspanden, showrooms en werkruimtes.</p>
-          <a href="https://wa.me/31612345678?text=Hallo,%20ik%20wil%20graag%20een%20offerte%20voor%20schoonmaak%20van%20een%20bedrijfspand." target="_blank">Vraag offerte aan</a>
-        </div>
-      </div>
+<!-- Bedrijf -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Bedrijfspanden</h3>
+<p>Complete schoonmaak van bedrijfsruimtes.</p>
+<a href="https://wa.me/31612345678?text=Offerte%20bedrijf">Vraag offerte aan</a>
+</div>
+</div>
 
-    </div>
-  </div>
-</section>
-
-<section class="why">
-  <div class="container">
-    <div class="section-title">
-      <h2>Waarom kiezen bedrijven voor ons?</h2>
-      <p>
-        Schoonmaak moet gewoon goed geregeld zijn. Daarom werken we duidelijk,
-        betrouwbaar en met korte lijnen.
-      </p>
-    </div>
-
-    <div class="why-grid">
-      <div class="why-box">
-        <span>✓</span>
-        <h3>Betrouwbaar</h3>
-        <p>Afspraak is afspraak. U weet waar u aan toe bent.</p>
-      </div>
-
-      <div class="why-box">
-        <span>✓</span>
-        <h3>Flexibel</h3>
-        <p>Dagelijks, wekelijks of periodiek schoonmaakwerk.</p>
-      </div>
-
-      <div class="why-box">
-        <span>✓</span>
-        <h3>Snel contact</h3>
-        <p>Vraag eenvoudig een offerte aan via WhatsApp.</p>
-      </div>
-
-      <div class="why-box">
-        <span>✓</span>
-        <h3>Professioneel</h3>
-        <p>Een nette uitstraling voor uw bedrijf of pand.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="section-title">
-      <h2>Zo werkt het</h2>
-      <p>
-        Geen ingewikkelde formulieren. Gewoon snel duidelijkheid.
-      </p>
-    </div>
-
-    <div class="steps">
-      <div class="step">
-        <div class="step-number">1</div>
-        <h3>Stuur een WhatsApp</h3>
-        <p>Vertel kort wat u zoekt en om welk pand of ruimte het gaat.</p>
-      </div>
-
-      <div class="step">
-        <div class="step-number">2</div>
-        <h3>Wij bekijken de situatie</h3>
-        <p>We bespreken de werkzaamheden, frequentie en wensen.</p>
-      </div>
-
-      <div class="step">
-        <div class="step-number">3</div>
-        <h3>U ontvangt een offerte</h3>
-        <p>Duidelijk, passend en zonder verborgen kosten.</p>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
 <section class="cta">
-  <div class="container">
-    <h2>Wilt u een schoon en representatief pand?</h2>
-    <p>
-      Stuur ons direct een WhatsApp-bericht en ontvang snel een passende offerte.
-    </p>
-
-    <a class="btn btn-green" href="https://wa.me/31612345678?text=Hallo,%20ik%20wil%20graag%20een%20offerte%20voor%20schoonmaakwerk." target="_blank">
-      Offerte aanvragen via WhatsApp
-    </a>
-  </div>
+<h2>Direct een offerte?</h2>
+<p>Stuur een WhatsApp en ontvang snel reactie.</p>
+<a class="btn green" href="https://wa.me/31612345678?text=Ik%20wil%20een%20offerte">Start WhatsApp</a>
 </section>
 
 <footer>
-  <div class="container">
-    <p>© 2026 Schoonmaakbedrijf Demo. Deze demo is gemaakt door SiteSnel24.</p>
-  </div>
+© 2026 Schoonmaakbedrijf demo - SiteSnel24
 </footer>
 
-<div class="whatsapp-label">Stel direct uw vraag</div>
-
-<a class="whatsapp-float" href="https://wa.me/31612345678?text=Hallo,%20ik%20wil%20graag%20meer%20informatie%20over%20schoonmaakwerk." target="_blank" aria-label="WhatsApp">
-  <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
-    <path fill="#ffffff" d="M16.04 3C8.86 3 3.02 8.82 3.02 15.98c0 2.29.6 4.53 1.74 6.5L3 29l6.68-1.75a13.02 13.02 0 0 0 6.36 1.62h.01c7.18 0 13.02-5.82 13.02-12.98C29.07 8.82 23.23 3 16.04 3Zm0 23.67h-.01c-1.92 0-3.8-.52-5.43-1.5l-.39-.23-3.96 1.04 1.06-3.86-.25-.4a10.65 10.65 0 0 1-1.64-5.74c0-5.95 4.86-10.79 10.83-10.79 2.89 0 5.6 1.12 7.64 3.16a10.7 10.7 0 0 1 3.18 7.63c0 5.95-4.86 10.79-10.83 10.79Zm5.94-8.08c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.74.16-.22.33-.85 1.06-1.04 1.28-.19.22-.38.25-.71.08-.33-.16-1.38-.51-2.63-1.62-.97-.86-1.63-1.93-1.82-2.26-.19-.33-.02-.5.14-.67.15-.15.33-.38.49-.57.16-.19.22-.33.33-.55.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.41-.3.33-1.14 1.12-1.14 2.72s1.17 3.15 1.33 3.37c.16.22 2.3 3.5 5.57 4.91.78.34 1.39.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.93-.79 2.2-1.55.27-.76.27-1.42.19-1.55-.08-.14-.3-.22-.63-.38Z"/>
-  </svg>
+<a class="whatsapp" href="https://wa.me/31612345678?text=Hallo%20ik%20wil%20info">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </a>
 
 </body>
